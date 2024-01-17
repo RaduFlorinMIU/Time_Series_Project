@@ -12,5 +12,38 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r }
-
+library(TSA)
+library(forecast)
+library(zoo)
+library(readxl)
+library(lubridate)
+library(magrittr)
+library(ggplot2)
+library(ggfortify)
 ```
+
+```{r}
+atlanta_data <- read_excel("atlanta-airport.xlsx")
+
+atlanta_ts = ts(
+  atlanta_data$TOTAL, 
+  start = c(2002, 10), 
+  frequency = 12
+)
+```
+
+
+```{r}
+# Decomposition of the plots
+atlanta_ts %>% 
+  decompose() %>% 
+  autoplot()
+```
+```{r}
+atlanta_ts %>% 
+  ts(frequency = 1) %>% 
+  acf(plot = FALSE) %>% 
+
+  .  ggtitle("ACF")
+```
+
