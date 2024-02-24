@@ -11,7 +11,7 @@ The objective of this project is to utilize the Box-Jenkins methodology to forec
 
 ## Data Set
 
-The data set consists of monthly observations of air traffic from a specific airport. It contains approximately 100 observations.
+The data set consists of monthly observations of air traffic from a specific airport. It contains approximately 200 observations.
 
 ## Presentation
 
