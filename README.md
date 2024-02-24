@@ -1,4 +1,4 @@
-# Project Title: Airport Traffic Time Series Forecasting
+# Airport Traffic Time Series Forecasting
 
 ## Objectives
 
